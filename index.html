@@ -32,5 +32,28 @@
         <p>We can see 28 is the first triangle number to have over 5 divisors.</p>
         <p>What is the value of the first triangle number to have over n (e.g. 500) divisors?</p>
     </section>
+
+    <!-- Set Up Form -->
+    <section class="container-fluid">
+        <form>
+            <!-- Set Up Label and Input -->
+            <article class="mb-3">
+                <label for="mynumber" class="form-label">Number of Divisors (Required)</label>
+                <input class="form-control" placeholder="Enter whole number between 1 and 1000 (e.g. 5)" title="Enter whole number between 1 and 1000 (e.g. 5)" id="mynumber">
+            </article>
+
+            <!-- Set Up and Center Buttons -->
+            <article class="d-grid gap-2 d-flex justify-content-center">
+                <button type="button" onclick="getNumberInfo()" class="btn btn-info">Submit</button>
+                <button type="reset" onclick="clearInfo()" class="btn btn-warning">Reset</button>
+            </article>
+        </form>
+
+        <!-- Display Number Information -->
+        <p id="numinfo"></p>
+
+        <!-- Load Script -->
+        <script src="js/script.js"></script>
+    </section>
 </body>
 </html>
