@@ -16,3 +16,33 @@ function getNumberInfo() {
     document.getElementById("numinfo").innerHTML = txt;
 
 }
+
+/*
+    Function to return the value of the first triangle number
+    to have over n divisors
+    divisibleTriangleNumber(5) returns 28
+    divisibleTriangleNumber(23) returns 630
+*/
+function divisibleTriangleNumber(n) {
+    let i = 1;
+    let triangleNum = 1;
+    while (numDivisors(triangleNum) < n) {
+        i += 1;
+        triangleNum += i;
+    }
+    return triangleNum;
+}
+
+/*
+    Function to return the number of divisors
+    numDivisors(6) returns 4
+*/
+function numDivisors(n) {
+    let count = 0;
+    for (let i=1;i<Math.sqrt(n);i++) {
+        if (n%i===0) count += 2;
+    }
+    // Check if the number n is a perfect square
+    if (n % Math.sqrt(n) === 0) count += 1;
+    return count;
+}
