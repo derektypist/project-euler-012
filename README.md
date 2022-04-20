@@ -20,6 +20,8 @@ We can see that 28 is the first triangle number to have over 5 divisors.
 
 What is the value of the first triangle number to have over n divisors (e.g. 500)?  The aim is to answer this question using HTML Forms and JavaScript.
 
+Information at [Project Euler 012](https://projecteuler.net/problem=12)
+
 ## UX
 
 **Getting Started**
@@ -51,4 +53,29 @@ As a user, I expect the function `divisibleTriangleNumber(500)` to return 765765
 
 The function `divisibleTriangleNumber(n)` returns a number, where `n` is the number of divisors between 1 and 1000.
 
+## Features
 
+Allows the user to enter the number of divisors, as well as getting the first triangle number to have over that number of divisors.  Performs checks to see if the input is valid.  If the input is not valid, an error message is displayed.
+
+## Technologies
+
+Uses HTML5, CSS3, JavaScript, Bootstrap 5.1.3 and Google Fonts.
+
+## Testing
+
+Ensure all user stories have been met.
+
+## Deployment
+
+Deployed on [GitHub Pages](https://derektypist.github.io/project-euler-012) at the main branch.
+
+## Credits
+
+### Content
+
+Written by me.
+
+### Acknowledgements
+
+- [Project Euler](https://projecteuler.net)
+- [FreeCodeCamp](https://www.freecodecamp.org)
