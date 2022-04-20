@@ -46,3 +46,9 @@ function numDivisors(n) {
     if (n % Math.sqrt(n) === 0) count += 1;
     return count;
 }
+
+// Function to Clear Information
+function clearInfo() {
+    let txt = "";
+    document.getElementById("numinfo").innerHTML = txt;
+}
