@@ -20,5 +20,35 @@ We can see that 28 is the first triangle number to have over 5 divisors.
 
 What is the value of the first triangle number to have over n divisors (e.g. 500)?  The aim is to answer this question using HTML Forms and JavaScript.
 
+## UX
+
+**Getting Started**
+
+Enter a whole number between 1 and 1000 in the input field and click on the Submit Button.  You will see the number you have entered as well as the first triangle number to have over n divisors, unless you have made an invalid input.  For example, if you entered 5, you should get 28 as the first triangle number to have over n divisors.  Click on the Reset Button to clear that information or to start again.
+
+**User Stories**
+
+As a user, I expect to get an invalid input if I do any of:
+
+* Not enter anything in the input field
+* Entering text that is not a number (e.g. bus)
+* Entering a number less than 1 or greater than 1000
+* Entering a number, but it is not an integer
+
+As a user, I expect the function `divisibleTriangleNumber(5)` to return a number.
+
+As a user, I expect the function `divisibleTriangleNumber(5)` to return 28.
+
+As a user, I expect the function `divisibleTriangleNumber(23)` to return 630.
+
+As a user, I expect the function `divisibleTriangleNumber(167)` to return 1385280.
+
+As a user, I expect the function `divisibleTriangleNumber(374)` to return 17907120.
+
+As a user, I expect the function `divisibleTriangleNumber(500)` to return 76576500.
+
+**Information Architecture**
+
+The function `divisibleTriangleNumber(n)` returns a number, where `n` is the number of divisors between 1 and 1000.
 
 
